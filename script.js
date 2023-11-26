@@ -1,6 +1,6 @@
 "use strict";
 
-import PhotoSwipeLightbox from "node_modules/photoswipe/dist/photoswipe-lightbox.esm.js";
+import PhotoSwipeLightbox from "./node_modules/photoswipe/dist/photoswipe-lightbox.esm.js";
 
 const isMobile = (userAgent) => {
   return !!(
@@ -306,7 +306,7 @@ headingQuery();
 const lightbox = new PhotoSwipeLightbox({
   gallery: "#gallery__wrapper",
   children: "a",
-  pswpModule: () => import("node_modules/photoswipe/dist/photoswipe.esm.js"),
+  pswpModule: () => import("./node_modules/photoswipe/dist/photoswipe.esm.js"),
 });
 
 lightbox.init();
